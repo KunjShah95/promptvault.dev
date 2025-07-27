@@ -1,10 +1,14 @@
-# � PromptVault - The Ultimate Prompt Engineering Resource Hub
+# 🚀 PromptVault - The Ultimate Prompt Engineering Resource Hub
 
+📦 **PromptVault**
+```
 📦 PromptVault
-├── 📄 index.html          # Main HTML structure
-├── 🎨 styles.css          # All styling & themes
-├── ⚡ script.js           # Functionality & resources
-├── 📖 README.md           # This beautiful documentation
+├── 📄 index.html        # Main HTML structure
+├── 🎨 styles.css        # All styling & themes
+├── ⚡ script.js         # Functionality & resources
+├── 📖 README.md         # This beautiful documentation
+```
+
 [![Made with HTML5](https://img.shields.io/badge/Made%20with-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
 [![Styled with CSS3](https://img.shields.io/badge/Styled%20with-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![Powered by JavaScript](https://img.shields.io/badge/Powered%20by-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
@@ -23,16 +27,16 @@
 
 ## ✨ Features
 
-🎨 **Beautiful, glassy, minimal UI/UX** with smooth animations  
-📱 **Fully responsive** - works perfectly on desktop, tablet, and mobile  
-🔍 **Smart search & filtering** - find resources instantly  
-📝 **Resource submission form** - no login required, just submit!  
-🌙 **Dark/Light mode toggle** - choose your preferred theme  
-⚡ **Lightning fast** - no build steps, no dependencies  
-♿ **Accessible design** - WCAG compliant with keyboard navigation  
-🎯 **Curated resources** - all major prompt engineering resources in one place  
-💾 **Local storage** - your submissions are saved locally  
-🧹 **Clean codebase** - no legacy code, no bloat, just pure functionality  
+- 🎨 **Beautiful, glassy, minimal UI/UX** with smooth animations  
+- 📱 **Fully responsive** - works perfectly on desktop, tablet, and mobile  
+- 🔍 **Smart search & filtering** - find resources instantly  
+- 📝 **Resource submission form** - no login required, just submit!  
+- 🌙 **Dark/Light mode toggle** - choose your preferred theme  
+- ⚡ **Lightning fast** - no build steps, no dependencies  
+- ♿ **Accessible design** - WCAG compliant with keyboard navigation  
+- 🎯 **Curated resources** - all major prompt engineering resources in one place  
+- 💾 **Local storage** - your submissions are saved locally  
+- 🧹 **Clean codebase** - no legacy code, no bloat, just pure functionality  
 
 ---
 
@@ -119,12 +123,12 @@ const resourceCategories = [
 
 ## 🏗️ Project Structure
 
-```text
+```
 📦 Prompt Engineering Resource Hub
-├── 📄 index.html          # Main HTML structure
-├── � styles.css          # All styling & themes
-├── ⚡ script.js           # Functionality & resources
-├── 📖 README.md           # This beautiful documentation
+├── 📄 index.html        # Main HTML structure
+├── 🎨 styles.css        # All styling & themes
+├── ⚡ script.js         # Functionality & resources
+├── 📖 README.md         # This beautiful documentation
 └── 📁 .github/
     └── 📝 copilot-instructions.md
 ```
@@ -133,12 +137,12 @@ const resourceCategories = [
 
 ## 🌟 Tech Stack
 
-| Technology | Purpose | Badge |
-|------------|---------|-------|
-| **HTML5** | 🏗️ Structure | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) |
-| **CSS3** | 🎨 Styling | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) |
-| **JavaScript** | ⚡ Functionality | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
-| **LocalStorage** | 💾 Data Persistence | ![Storage](https://img.shields.io/badge/Storage-Local-00D26A?style=flat) |
+| Technology      | Purpose                | Badge                                                                                   |
+|-----------------|-----------------------|-----------------------------------------------------------------------------------------|
+| **HTML5**       | 🏗️ Structure          | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)  |
+| **CSS3**        | 🎨 Styling            | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)     |
+| **JavaScript**  | ⚡ Functionality       | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) |
+| **LocalStorage**| 💾 Data Persistence   | ![Storage](https://img.shields.io/badge/Storage-Local-00D26A?style=flat)                  |
 
 ---
 
