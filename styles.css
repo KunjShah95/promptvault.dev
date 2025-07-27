@@ -1,0 +1,267 @@
+/* Glassy, modern, minimal UI for Prompt Engineering Resource Hub */
+/* Light/Dark mode variables */
+:root {
+  --primary: #00e6ff;
+  --accent: #ff9800;
+  --bg: #10131a;
+  --glass: rgba(0,230,255,0.08);
+  --glass-border: rgba(0,230,255,0.18);
+  --white: #fff;
+  --text: #ccefff;
+  --radius: 18px;
+  --shadow: 0 4px 32px rgba(0,230,255,0.10);
+}
+
+[data-theme="light"] {
+  --primary: #0077ff;
+  --accent: #ff9800;
+  --bg: #f7faff;
+  --glass: rgba(0,119,255,0.07);
+  --glass-border: rgba(0,119,255,0.13);
+  --white: #222;
+  --text: #222;
+  --shadow: 0 4px 32px rgba(0,119,255,0.08);
+}
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  z-index: 100;
+  background: var(--glass);
+  color: var(--primary);
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 12px var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+.theme-toggle:hover, .theme-toggle:focus {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--white);
+  outline: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+.hero {
+  background: linear-gradient(135deg, #00e6ff22 0%, #ff980022 100%);
+  padding: 64px 0 32px 0;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.hero-content h1 {
+  font-size: 2.8em;
+  color: var(--white);
+  margin-bottom: 0.2em;
+  letter-spacing: 1px;
+}
+.hero-content p {
+  font-size: 1.2em;
+  color: var(--text);
+  margin-bottom: 1.5em;
+}
+.btn {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 28px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 12px var(--glass-border);
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  margin: 0.5em 0.5em 0 0;
+}
+.btn:hover, .btn:focus {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+  color: var(--white);
+  outline: none;
+  transform: translateY(-2px) scale(1.03);
+}
+.resources-section {
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  padding: 32px 18px 48px 18px;
+  background: var(--glass);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.resources-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.resources-header h2 {
+  flex: 1 1 100%;
+  margin: 0 0 8px 0;
+  color: var(--white);
+}
+#resourceSearch {
+  flex: 1 1 220px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1.5px solid var(--glass-border);
+  background: rgba(255,255,255,0.10);
+  color: var(--white);
+  font-size: 1em;
+  outline: none;
+  margin-bottom: 8px;
+}
+#resourceSearch:focus {
+  border: 1.5px solid var(--primary);
+  box-shadow: 0 4px 24px var(--glass-border);
+}
+.resources-categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.resource-cat-btn {
+  font-size: 1em;
+  padding: 8px 18px;
+  border-radius: 12px;
+  background: var(--glass);
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: 6px;
+}
+.resource-cat-btn.active, .resource-cat-btn:hover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--white);
+}
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-bottom: 28px;
+}
+.resource-card {
+  background: var(--glass);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 18px 18px 18px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s, border 0.2s, transform 0.2s;
+  min-height: 120px;
+}
+.resource-card.featured {
+  border: 2px solid var(--accent);
+  background: rgba(255,152,0,0.10);
+}
+.resource-card .resource-cat {
+  display: inline-block;
+  font-size: 0.9em;
+  color: var(--primary);
+  background: var(--glass);
+  border-radius: 8px;
+  padding: 2px 10px;
+  margin-bottom: 8px;
+}
+.resource-card .resource-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--white);
+}
+.resource-card .resource-desc {
+  font-size: 0.98em;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.resource-card .resource-link {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.resource-card .resource-link:hover {
+  color: var(--accent);
+}
+.resource-card .resource-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
+  color: var(--white);
+  border-radius: 8px;
+  font-size: 0.85em;
+  padding: 2px 8px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+.resource-submit {
+  background: var(--glass);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 18px 12px 18px;
+  margin: 0 auto 24px auto;
+  max-width: 500px;
+  text-align: center;
+}
+.resource-submit input, .resource-submit select {
+  width: 48%;
+  margin: 6px 1%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid var(--glass-border);
+  background: rgba(255,255,255,0.10);
+  color: var(--white);
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  margin-bottom: 8px;
+}
+.resource-submit input:focus, .resource-submit select:focus {
+  border: 1.5px solid var(--primary);
+  box-shadow: 0 4px 24px var(--glass-border);
+}
+.resource-submit button {
+  margin-top: 8px;
+  width: 100%;
+}
+#resourceSubmitMsg {
+  margin-top: 8px;
+  color: var(--primary);
+  font-size: 1em;
+}
+footer {
+  text-align: center;
+  color: var(--text);
+  padding: 32px 0 16px 0;
+  font-size: 1em;
+  background: transparent;
+}
+@media (max-width: 700px) {
+  .resources-section {
+    padding: 12px 2vw 32px 2vw;
+  }
+  .resources-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  .resource-submit input, .resource-submit select {
+    width: 98%;
+    margin: 6px 0;
+  }
+}

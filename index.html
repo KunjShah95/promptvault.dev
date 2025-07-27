@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptVault - The Ultimate Prompt Engineering Resource Hub</title>
+  <meta name="description" content="Discover the ultimate vault of prompt engineering resources. Search and explore curated AI prompts, ChatGPT guides, LLM tools, courses, and communities for prompt engineers.">
+  <meta name="keywords" content="prompt engineering, AI prompts, ChatGPT prompts, LLM prompting, artificial intelligence, machine learning, prompt optimization, AI tools, prompt templates, prompt design, OpenAI, GPT">
+  <meta name="author" content="PromptVault">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="PromptVault - The Ultimate Prompt Engineering Resource Hub">
+  <meta property="og:description" content="Discover the ultimate vault of prompt engineering resources. Search and explore curated AI prompts, ChatGPT guides, LLM tools, courses, and communities.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://promptvault.dev">
+  <meta property="og:image" content="https://promptvault.dev/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PromptVault - The Ultimate Prompt Engineering Resource Hub">
+  <meta name="twitter:description" content="Discover the ultimate vault of prompt engineering resources. Search and explore curated AI prompts, ChatGPT guides, LLM tools, courses, and communities.">
+  <meta name="twitter:image" content="https://promptvault.dev/twitter-image.png">
+  <link rel="canonical" href="https://promptvault.dev">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">🌙</button>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>PromptVault</h1>
+      <p>The ultimate vault of prompt engineering resources. Discover, search, and explore the best curated collection on the web—always up to date, always accessible.</p>
+      <a href="#resources" class="btn hero-btn">Explore the Vault</a>
+    </div>
+  </header>
+  <main>
+    <section id="resources" class="resources-section">
+      <div class="resources-header">
+        <h2>All Resources</h2>
+        <input id="resourceSearch" type="text" placeholder="Search resources..." aria-label="Search resources">
+        <div id="resourceCategories" class="resources-categories"></div>
+      </div>
+      <div id="resourcesGrid" class="resources-grid"></div>
+      <form id="resourceSubmitForm" class="resource-submit" autocomplete="off">
+        <h3>Submit a Resource</h3>
+        <input name="resourceTitle" type="text" placeholder="Title" required>
+        <input name="resourceDesc" type="text" placeholder="Short Description" required>
+        <input name="resourceLink" type="url" placeholder="Resource URL (https://...)" required>
+        <select name="resourceCat" required>
+          <option value="">Category</option>
+          <option value="Guides">Guides</option>
+          <option value="Courses">Courses</option>
+          <option value="Tools">Tools</option>
+          <option value="Communities">Communities</option>
+          <option value="Research">Research</option>
+          <option value="Videos">Videos</option>
+          <option value="Blogs">Blogs</option>
+          <option value="Templates">Templates</option>
+          <option value="Other">Other</option>
+        </select>
+        <button type="submit" class="btn">Submit</button>
+        <div id="resourceSubmitMsg"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 PromptVault. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
