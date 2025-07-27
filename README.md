@@ -1,12 +1,11 @@
 # � PromptVault - The Ultimate Prompt Engineering Resource Hub
 
-[![Made with HTML5](https://img.shields.io/badge/M```text
 📦 PromptVault
 ├── 📄 index.html          # Main HTML structure
 ├── 🎨 styles.css          # All styling & themes
 ├── ⚡ script.js           # Functionality & resources
 ├── 📖 README.md           # This beautiful documentation
-
+[![Made with HTML5](https://img.shields.io/badge/Made%20with-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
 [![Styled with CSS3](https://img.shields.io/badge/Styled%20with-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 [![Powered by JavaScript](https://img.shields.io/badge/Powered%20by-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://www.javascript.com/)
 [![Dark Mode](https://img.shields.io/badge/Dark%20Mode-Enabled-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
