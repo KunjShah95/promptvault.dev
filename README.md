@@ -21,7 +21,7 @@
 
 **Keywords:** *prompt engineering, AI prompts, ChatGPT prompts, LLM prompting, artificial intelligence, machine learning, prompt optimization, AI tools, prompt templates, prompt design*
 
-[🚀 **Live Demo**](https://promptvault.dev)
+[🚀 **Live Demo**](kunjshah95.github.io/promptvault.dev/)
 
 ---
 
